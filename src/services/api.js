@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-	baseURL: "http://localhost/credpago/public/api",
-	// baseURL: "https://api.leap.art.br/api",
+	// baseURL: "http://localhost/credpago/public/api",
+	baseURL: "https://api.credpago.umprogramador.com.br/api",
 	headers: {
 		"Content-Type": "application/json",
 	},
