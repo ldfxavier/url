@@ -99,11 +99,6 @@ const Login = () => {
 						<ButtonBack>Criar conta</ButtonBack>
 					</a>
 				</FormGroup>
-				<FormGroup>
-					<a href="/">
-						<ButtonBack>Voltar</ButtonBack>
-					</a>
-				</FormGroup>
 			</Form>
 		</Container>
 	);
