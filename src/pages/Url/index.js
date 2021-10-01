@@ -28,7 +28,6 @@ function Url() {
 	const [loading, setLoading] = useState(false);
 
 	const getUrlList = () => {
-		setLoading(true);
 		api.get("/url", {
 			headers: {
 				Authorization: `Bearer ${usuario?.access_token}`,
@@ -60,6 +59,7 @@ function Url() {
 				}
 			)
 				.then((response) => {
+					setUrl('');
 					getUrlList();
 					Alert.success("Url adicionada com sucesso!");
 				})
@@ -70,6 +70,7 @@ function Url() {
 	}
 
 	useEffect(() => {
+		setLoading(true);
 		getUrlList();
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
